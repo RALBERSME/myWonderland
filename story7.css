@@ -113,6 +113,10 @@ iframe {
   border-radius: 50%;
   border: 15px solid rgba(243, 243, 191, 2);
 }
+iframe:hover {
+  border-radius: 0%;
+  border: none;
+}
 .bye {
   position: absolute;
   top: 55%;

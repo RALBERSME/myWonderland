@@ -34,7 +34,7 @@ body {
 #video3 {
   position: absolute;
   top: 42%;
-  left: 2%;
+  left: 2.2%;
   border-radius: 25%;
 }
 #video4 {
@@ -42,6 +42,13 @@ body {
   top: 42%;
   left: 80%;
   border-radius: 25%;
+}
+#video1:hover,
+#video2:hover,
+#video3:hover,
+#video4:hover {
+  transform: scale(2) translateX(50px);
+  border-radius: 0;
 }
 .button {
   display: flex;

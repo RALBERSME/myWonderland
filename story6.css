@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #faf4cf;
+  background-image: url("data:image/svg+xml,%3Csvg width='48' height='64' viewBox='0 0 48 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M48 28v-4L36 12 24 24 12 12 0 24v4l4 4-4 4v4l12 12 12-12 12 12 12-12v-4l-4-4 4-4zM8 32l-6-6 10-10 10 10-6 6 6 6-10 10L2 38l6-6zm12 0l4-4 4 4-4 4-4-4zm12 0l-6-6 10-10 10 10-6 6 6 6-10 10-10-10 6-6zM0 16L10 6 4 0h4l4 4 4-4h4l-6 6 10 10L34 6l-6-6h4l4 4 4-4h4l-6 6 10 10v4L36 8 24 20 12 8 0 20v-4zm0 32l10 10-6 6h4l4-4 4 4h4l-6-6 10-10 10 10-6 6h4l4-4 4 4h4l-6-6 10-10v-4L36 56 24 44 12 56 0 44v4z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.container {
+  margin: 2%;
+  text-align: center;
+}
+.text {
+  padding: 15px;
+  background-image: linear-gradient(to right bottom, #f6edb3, #f6f3e3);
+  border-radius: 15px;
+  font-size: 1.2rem;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 1.1rem;
+}
+.links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  background-color: #bfd9cf;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px dotted black;
+}
+.links a:hover {
+  background-color: #f6edb3;
+}
+.videos {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.iframes {
+  display: flex;
+  gap: 15px;
+}
+iframe {
+  border-radius: 10px;
+  border: 10px solid #bfd9cf;
+  outline-offset: 12px;
+  outline: 5px dashed black;
+}
+#cia1 {
+  position: absolute;
+  top: 5%;
+  left: 19%;
+}
+#cia2 {
+  position: absolute;
+  top: 5%;
+  left: 70%;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.button a {
+  width: 1200px;
+  height: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+  transition: all 0.2s;
+  color: white;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.button a:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  background-color: #20caff;
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transition: all 0.2s;
+  transform-origin: top;
+}
+
+.button a:hover:before {
+  top: -6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(75deg);
+}
+
+.button a:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(79, 130, 110);
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transition: all 0.2s;
+  transform-origin: bottom;
+}
+
+.button a:hover:after {
+  top: 6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(-75deg);
+}
+
+.button a:hover {
+  color: #272727;
+}

@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(230, 248, 241);
+  position: relative;
+}
+.container {
+  margin: 2.5%;
+  font-size: 1.3rem;
+}
+marquee {
+  position: absolute;
+  top: -50px;
+  left: 5%;
+  margin-left: 20%;
+}
+marquee img {
+  transform: rotate(-5deg) scale(0.9);
+  animation: shakeHat 3s ease infinite;
+}
+@keyframes shakeHat {
+  0% {
+    transform: rotate(-5deg) scale(0.4);
+  }
+  33% {
+    transform: rotate(5deg) scale(0.6);
+  }
+  35% {
+    transform: rotate(5deg) scale(0.6);
+  }
+  66% {
+    transform: rotate(-5deg) scale(0.6);
+  }
+  99% {
+    transform: rotate(5deg) scale(0.5);
+  }
+  100% {
+    transform: rotate(5deg) scale(0.4);
+  }
+}
+.text {
+  margin: 2rem 0 0 1rem;
+  display: flex;
+  gap: 15px;
+}
+.left img {
+  height: 78vh;
+  z-index: 20;
+}
+p {
+  background-image: linear-gradient(
+    to right,
+    rgb(79, 130, 110),
+    rgb(24, 188, 200)
+  );
+  color: whitesmoke;
+  padding: 25px;
+  margin-top: 15px;
+  border-radius: 10px;
+  transform: translateX(2000px);
+  z-index: 1;
+}
+p:nth-of-type(1) {
+  animation: showP 3s linear forwards;
+}
+p:nth-of-type(2) {
+  animation: showP 3s linear forwards;
+  animation-delay: 3s;
+}
+p:nth-of-type(3) {
+  animation: showP 3s linear forwards;
+  animation-delay: 7s;
+}
+p:nth-of-type(4) {
+  animation: showP 3s linear forwards;
+  animation-delay: 10s;
+}
+p:nth-of-type(5) {
+  animation: showP 3s linear forwards;
+  animation-delay: 13s;
+}
+@keyframes showP {
+  from {
+    transform: translateX(2000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+figure {
+  margin: 0;
+}
+.movies {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+iframe {
+  border-radius: 24px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+.links a {
+  text-decoration: none;
+  padding: 17.5px;
+  width: 500px;
+  background-color: rgb(79, 130, 110);
+  border-radius: 10px;
+  color: whitesmoke;
+  border-top: 10px solid rgb(24, 188, 200);
+}
+.links a:hover {
+  background-color: rgb(24, 188, 200);
+
+  border-top: 10px solid rgb(79, 130, 110);
+}
+hr {
+  width: 30%;
+  margin: 0 auto;
+  display: transparent;
+  border-top: 3px dotted rgb(79, 130, 110);
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.button a {
+  width: 1200px;
+  height: 60px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  text-align: center;
+  line-height: 60px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+  transition: all 0.2s;
+  color: white;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.button a:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  background-color: #20caff;
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transition: all 0.2s;
+  transform-origin: top;
+}
+
+.button a:hover:before {
+  top: -6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(75deg);
+}
+
+.button a:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(79, 130, 110);
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transition: all 0.2s;
+  transform-origin: bottom;
+}
+
+.button a:hover:after {
+  top: 6px;
+  left: 0;
+  transform: perspective(1000px) rotateX(-75deg);
+}
+
+.button a:hover {
+  color: #272727;
+}

@@ -18,6 +18,13 @@ body {
   background-image: linear-gradient(rgb(24, 188, 200), #aeddcb);
   padding: 20px;
   border-radius: 10px;
+  border: 8px solid rgb(79, 130, 110);
+  border-bottom: 6px solid rgb(7, 123, 131);
+  border-right: 6px solid rgb(41, 98, 102);
+}
+.music {
+  margin-left: 20px;
+  align-items: center;
 }
 .movies {
   display: flex;

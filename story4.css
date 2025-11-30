@@ -13,73 +13,23 @@ body {
 
 .container {
   margin: 2%;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   background-image: linear-gradient(#8cf0ec, #bfd9cf);
   padding: 20px;
   border-radius: 15px;
 }
 
-#video1 {
-  position: absolute;
-  top: 42%;
-  left: 17%;
+.video {
   border-radius: 25%;
   border: 5px solid #20caff;
   border-bottom: 5px solid rgb(79, 130, 110);
 }
-#video2 {
-  position: absolute;
-  top: 42%;
-  left: 9.5%;
-  border-radius: 25%;
-  border: 5px solid #20caff;
-  border-bottom: 5px solid rgb(79, 130, 110);
-}
-#video3 {
-  position: absolute;
-  top: 42%;
-  left: 2.2%;
-  border: 5px solid #20caff;
-  border-bottom: 5px solid rgb(79, 130, 110);
-  border-radius: 25%;
-}
-#video4 {
-  position: absolute;
-  top: 42%;
-  left: 80%;
-  border-radius: 25%;
-  border: 5px solid #20caff;
-  border-bottom: 5px solid rgb(79, 130, 110);
-}
-#video1:hover,
-#video2:hover,
-#video3:hover,
-#video4:hover {
+.video:hover {
   transform: scale(2) translateX(50px);
   border-radius: 0;
 }
-#video5 {
-  position: absolute;
-  top: 42%;
-  left: 88%;
-  border-radius: 25%;
-  border: 5px solid #20caff;
-  border-bottom: 5px solid rgb(79, 130, 110);
-}
-#video5:hover {
+.video:last-of-type:hover {
   transform: scale(2) translateX(-50px);
-  border-radius: 0;
-}
-#video6 {
-  position: absolute;
-  top: 1%;
-  left: 57.5%;
-  border-radius: 5%;
-  border: 5px solid #20caff;
-  border-bottom: 5px solid rgb(79, 130, 110);
-}
-#video6:hover {
-  transform: scale(8) translateY(50px) translateX(-25px);
   border-radius: 0;
 }
 .button {

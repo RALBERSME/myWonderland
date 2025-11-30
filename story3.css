@@ -32,10 +32,12 @@ body {
 .introText {
   margin-right: 10%;
   margin-left: 7.5%;
+
   text-align: center;
   font-size: 1.4rem;
-  padding: 10px;
-  padding-top: 90px;
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 25px;
   border-radius: 10px;
   background-image: linear-gradient(rgb(202, 245, 228), rgb(235, 245, 202));
 }

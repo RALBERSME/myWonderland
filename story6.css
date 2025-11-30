@@ -46,6 +46,7 @@ body {
 .iframes {
   display: flex;
   gap: 15px;
+  padding-top: 65px;
 }
 iframe {
   border-radius: 10px;

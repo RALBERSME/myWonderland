@@ -1,8 +1,7 @@
 var animationContainer = document.getElementById("animationContainer");
 function addElement() {
   var element = document.createElement("img");
-  element.src =
-    "https://cdn.pixabay.com/photo/2017/10/23/10/14/idea-2880595_640.png";
+  element.src = "images/birnenHand.png";
   element.width = "450";
   element.height = "250";
   return element;

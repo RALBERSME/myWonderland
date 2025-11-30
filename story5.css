@@ -38,7 +38,7 @@ body {
   border-radius: 10px;
 }
 .movies a:hover {
-  color: orangered;
+  color: white;
 }
 iframe {
   border-radius: 5px;
